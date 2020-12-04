@@ -1,0 +1,109 @@
+/* Large desktops and laptops */
+
+
+/* @media (min-width: 1200px) {
+
+
+/* Landscape tablets and medium desktops */
+
+
+/* @media (min-width: 992px) and (max-width: 1199px) {} */
+
+
+/* Portrait tablets and small desktops */
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .w50 {
+        width: 100%;
+    }
+    .w25 {
+        width: 50%;
+    }
+    .h700 {
+        height: 1200px;
+    }
+    .h310 {
+        height: 600px;
+    }
+    .h350 {
+        height: 650px;
+    }
+    .h390 {
+        height: 700px;
+    }
+    .h370 {
+        height: 680px;
+    }
+    .h300 {
+        height: 500px;
+    }
+    .get {
+        margin-top: 120px;
+    }
+}
+
+
+/* Landscape phones and portrait tablets */
+
+@media (max-width: 767px) {
+    .w50 {
+        width: 100%;
+    }
+    .w25 {
+        width: 50%;
+    }
+    .h700 {
+        height: 1200px;
+    }
+    .h310 {
+        height: 600px;
+    }
+    .h350 {
+        height: 650px;
+    }
+    .h390 {
+        height: 700px;
+    }
+    .h370 {
+        height: 680px;
+    }
+    .h300 {
+        height: 500px;
+    }
+    .get {
+        margin-top: 120px;
+    }
+}
+
+
+/* Portrait phones and smaller */
+
+@media (max-width: 480px) {
+    .w50 {
+        width: 100%;
+    }
+    .w25 {
+        width: 50%;
+    }
+    .h700 {
+        height: 1200px;
+    }
+    .h310 {
+        height: 600px;
+    }
+    .h350 {
+        height: 500px;
+    }
+    .h390 {
+        height: 700px;
+    }
+    .h370 {
+        height: 680px;
+    }
+    .h300 {
+        height: 100px;
+    }
+    .get {
+        margin-top: 120px;
+    }
+}
