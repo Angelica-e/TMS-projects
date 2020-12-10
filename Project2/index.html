@@ -4,94 +4,269 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=, initial-scale=1.0">
-    <title>Project2-2</title>
+    <title>Project2</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/349c137a8d.css">
     <link rel="stylesheet" href="./reset.css">
     <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./modificators.css">
+    <link rel="stylesheet" href="./media.css">
 
 </head>
 
 <body>
+    <!-- header -->
     <header class="header">
         <div class="wrapper">
-            <nav class="header__nav">
-                <ul class="header__list">
-                    <li class="header__item">
-                        <a href="#" class="header__link m-border">Главная</a>
+            <nav class="header__menu m-fw">
+                <input id="menu__toggle" type="checkbox" />
+                <label class="menu__btn" for="menu__toggle"><span></span></label>
+                <ul class="menu__list m-fw">
+                    <li class="menu__item">
+                        <a href="#Главная" class="menu__link m-border">Главная</a>
                     </li>
-                    <li class="header__item">
-                        <a href="#" class="header__link m-border">Наши проекты</a>
+                    <li class="menu__item">
+                        <a href="#Наши проекты" class="menu__link m-border">Наши проекты</a>
                     </li>
-                    <li class="header__item">
-                        <a href="#" class="header__link m-border">Услуги</a>
+                    <li class="menu__item">
+                        <a href="#Услуги" class="menu__link m-border">Услуги</a>
                     </li>
-                    <li class="header__item">
-                        <a href="#" class="header__link m-border">Новости</a>
+                    <li class="menu__item">
+                        <a href="#Новости" class="menu__link m-border">Новости</a>
                     </li>
-                    <li class="header__item">
-                        <a href="#" class="header__link m-border">Контакты</a>
+                    <li class="menu__item">
+                        <a href="#Контакты" class="menu__link m-border">Контакты</a>
                     </li>
                 </ul>
             </nav>
         </div>
         <div class="header__line"></div>
-
-
     </header>
-    <main class="main">
-        <article class="main__intro">
+    <!-- header end -->
+    <!-- main -->
+    <!-- intro -->
+    <main class="main m-fw">
+        <article id="Главная"></article>
+        <article class="main__intro m-w100">
             <div class="wrapper">
                 <p class="intro__subtitle m-c-white">Передовая IT студия</p>
                 <h1 class="intro__title m-c-white">Мы создаем легкие решения<br> сложных задач и проблем</h1>
-                <button class="intro__button m-main-button">Наши проекты</button>
+                <button class="intro__button m-main-button m-l50">Наши проекты</button>
             </div>
         </article>
-
-        <article class="main__servises">
-            <section class="servises__about-us m-h703">
+        <!-- intro end-->
+        <!-- servises -->
+        <article class="main__servises m-w100">
+            <section class="servises__about-us m-h703 m-w100">
                 <div class="wrapper">
+                    <article id="Услуги"></article>
                     <h2 class="servises__title m-c-black">Мы создаем мобильные приложения<br> для крупных корпораций</h2>
                     <p class="servises__subtitle m-c-grey">Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem<br> Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. </p>
-                    <aside class="servises__all-servises">
-                        <aside class="all-servises__box">
-                            <img class="ellipse" src="./img/Ellipse.png">
-                            <img class="ellipse2" src="./img/Ellipse2.png">
-                            <img class="group" src="./img/Group.png">
-                            <h3 class="box__title">Создание сайтов</h3>
-                            <p class="box__subtitle m-c-grey">Lorem Ipsum - это текст- "рыба", часто используе в печати и вэб-дизайне.</p>
+                    <aside class="servises__all-servises m-fw">
+                        <aside class="all-servises__card">
+                            <img class="all-servises__ellipse" src="./img/Ellipse.png">
+                            <img class="all-servises__ellipse2" src="./img/Ellipse2.png">
+                            <img class="all-servises__group" src="./img/Group.png">
+                            <h3 class="all-servises__title">Создание сайтов</h3>
+                            <p class="all-servises__subtitle m-c-grey">Lorem Ipsum - это текст- "рыба", часто используе в печати и вэб-дизайне.</p>
                         </aside>
-                        <aside class="all-servises__box">
-                            <img class="ellipse" src="./img/Ellipse.png">
-                            <img class="ellipse2" src="./img/Ellipse2.png">
-                            <img class="group" src="./img/Group.png">
-                            <h3 class="box__title">Создание сайтов</h3>
-                            <p class="box__subtitle m-c-grey">Lorem Ipsum - это текст- "рыба", часто используе в печати и вэб-дизайне.</p>
+                        <aside class="all-servises__card">
+                            <img class="all-servises__ellipse" src="./img/Ellipse.png">
+                            <img class="all-servises__ellipse2" src="./img/Ellipse2.png">
+                            <img class="all-servises__group" src="./img/Group.png">
+                            <h3 class="all-servises__title">Создание сайтов</h3>
+                            <p class="all-servises__subtitle m-c-grey">Lorem Ipsum - это текст- "рыба", часто используе в печати и вэб-дизайне.</p>
                         </aside>
-                        <aside class="all-servises__box">
-                            <img class="ellipse" src="./img/Ellipse.png">
-                            <img class="ellipse2" src="./img/Ellipse2.png">
-                            <img class="group" src="./img/Group.png">
-                            <h3 class="box__title">Создание сайтов</h3>
-                            <p class="box__subtitle m-c-grey">Lorem Ipsum - это текст- "рыба", часто используе в печати и вэб-дизайне.</p>
+                        <aside class="all-servises__card">
+                            <img class="all-servises__ellipse" src="./img/Ellipse.png">
+                            <img class="all-servises__ellipse2" src="./img/Ellipse2.png">
+                            <img class="all-servises__group" src="./img/Group.png">
+                            <h3 class="all-servises__title">Создание сайтов</h3>
+                            <p class="all-servises__subtitle m-c-grey">Lorem Ipsum - это текст- "рыба", часто используе в печати и вэб-дизайне.</p>
                         </aside>
                     </aside>
-                    <button class="servises__button m-main-button">Все услуги</button>
+                    <button class="servises__button m-main-button m-l50">Все услуги</button>
                 </div>
             </section>
-
-            <section class="servises__standarts m-h797 m-bc-grey">
+            <!-- servises end-->
+            <!-- standarts-->
+            <section class="servises__standarts m-fw m-h797 m-bc-grey m-w100">
                 <div class="wrapper">
-                    <h2 class="standarts__title m-c-black">Высокие стандарты разработки
-                    </h2>
-                    <p class="standarts__subtitle m-c-grey">Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. стандартной "рыбой" для текстов на латинице с начала XVI века. </p>
-                    <a href="#" class="servises__link">Подробнее о компании</a>
-
+                    <div class="standarts__wrap m-fw">
+                        <div class="standarts__content">
+                            <h2 class="standarts__title m-c-black">Высокие стандарты разработки
+                            </h2>
+                            <p class="standarts__subtitle m-c-grey">Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. стандартной "рыбой" для текстов на латинице с начала XVI века. </p>
+                            <a href="#" class="standarts__link link m-c-blue">Подробнее о компании</a>
+                        </div>
+                        <div class="standarts__img m-fw">
+                            <img class="img__rectangle" src="./img/Rectangle 2.png">
+                        </div>
+                    </div>
+                    <div class="standarts__line m-fw"></div>
+                    <aside class="standarts__all-standarts m-fw">
+                        <aside class="all-standarts__card m-fw">
+                            <img class="all-standarts__web" src="./img/web-programming.png">
+                            <p class="all-standarts__title">125</p>
+                            <p class="all-standarts__subtitle m-c-grey">Our projects</p>
+                        </aside>
+                        <aside class="all-standarts__card m-fw">
+                            <img class="all-standarts__web" src="./img/web-programming.png">
+                            <p class="all-standarts__title">125</p>
+                            <p class="all-standarts__subtitle m-c-grey">Our projects</p>
+                        </aside>
+                        <aside class="all-standarts__card m-fw">
+                            <img class="all-standarts__web" src="./img/web-programming.png">
+                            <p class="all-standarts__title">125</p>
+                            <p class="all-standarts__subtitle m-c-grey">Our projects</p>
+                        </aside>
+                        <aside class="all-standarts__card m-fw">
+                            <img class="all-standarts__web" src="./img/web-programming.png">
+                            <p class="all-standarts__title">125</p>
+                            <p class="all-standarts__subtitle m-c-grey">Our projects</p>
+                        </aside>
+                        <aside class="all-standarts__card m-fw">
+                            <img class="all-standarts__web" src="./img/web-programming.png">
+                            <p class="all-standarts__title">125</p>
+                            <p class="all-standarts__subtitle m-c-grey">Our projects</p>
+                        </aside>
+                    </aside>
                 </div>
             </section>
         </article>
+        <!-- standarts end-->
+        <!-- works-->
+        <article class="main__works m-w100">
+            <section class="works__section m-bc-indigo m-w100">
+                <div class="wrapper">
+                    <div class="works__section__header">
+                        <h2 class="works__section__title m-c-white">Наши работы, на которых мы специализируемся</h2>
+                        <button class="works__section__button m-main-button m-mt143">Все услуги</button>
+                    </div>
+
+                </div>
+            </section>
+            <div class="wrapper">
+                <div class="works__section__img">
+                    <img class="img__card" src="./img/Rectangle 3.png">
+                    <img class="img__card" src="./img/Rectangle 3.png">
+                    <img class="img__card" src="./img/Rectangle 3.png">
+                </div>
+
+                <section class="works__section__content m-fw">
+                    <div class="content__card">
+                        <h3 class="content__card__title m-mb30"><span class="title__number m-c-blue"> 01.</span> Исследование и упаковка</h3>
+                        <p class="content__card__subtitle m-c-grey m-mb30">Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века.</p>
+                        <a href="#" class="content__card__link link m-c-blue">Подробнее</a>
+                    </div>
+                    <div class="content__card">
+                        <h3 class="content__card__title m-mb30"><span class="title__number m-c-blue"> 01.</span> Исследование и упаковка</h3>
+                        <p class="content__card__subtitle m-c-grey m-mb30">Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века.</p>
+                        <a href="#" class="content__card__link link m-c-blue">Подробнее</a>
+                    </div>
+                    <div class="content__card">
+                        <h3 class="content__card__title m-mb30"><span class="title__number m-c-blue"> 01.</span> Исследование и упаковка</h3>
+                        <p class="content__card__subtitle m-c-grey m-mb30">Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века.</p>
+                        <a href="#" class="content__card__link link m-c-blue">Подробнее</a>
+                    </div>
 
 
+                </section>
+                <div class="standarts__line"></div>
+            </div>
 
+        </article>
+        <!-- works end-->
+        <!-- our-projects -->
+
+        <article class="main__our-projects m-h776 m-bc-grey m-w100">
+            <div class="wrapper">
+                <h2 class="our-projects__title m-c-black">Наши проекты</h3>
+                    <p class="our-projects__subtitle m-c-grey">Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem<br> Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. </p>
+                    <article id="Наши проекты"></article>
+                    <aside class="our-projects__img m-fw">
+                        <img class="our-projects__img__card" src="./img/Rectangle 4.png">
+                        <img class="our-projects__img__card" src="./img/Rectangle 4.png">
+                        <img class="our-projects__img__card" src="./img/Rectangle 4.png">
+                        <img class="our-projects__img__card" src="./img/Rectangle 4.png">
+                    </aside>
+                    <button class="our-projects__button m-main-button m-l50">Все проекты</button>
+            </div>
+        </article>
+        <!-- our-projects end -->
+        <!-- media -->
+        <article class="main__media m-fw m-w100">
+            <section class="media__header m-w100 m-h570">
+                <div class="wrapper">
+                    <h2 class="media__header__title m-c-white m-mb30">Видео о нашей работе</h2>
+                    <p class="media__header__subtitle m-c-white">Просто посмотрите, как мы работаем</p>
+                    <aside class="media__video">
+
+                        <!-- <iframe src="https://player.vimeo.com/video/216758056?color=f7f7f7&title=0&byline=0&portrait=0" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe> -->
+                    </aside>
+            </section>
+            </div>
+            <article id="Новости"></article>
+            <section class="media__form m-w100 m-h512">
+                <div class="wrapper">
+                    <div class="standarts__line m-mt165 m-mb85"></div>
+                    <h3 class="media__form__title m-c-black">Подпишитесь на нашу рассылку</h3>
+                    <p class="media__form__subtitle m-c-grey m-mb30">Полезные статьи, акции, новости - получите все это сейчас!</p>
+                    <form class="media__form__form">
+                        <input type="email" placeholder="Ваш e-mail">
+                        <button class="media__form__button m-c-white">Подписаться</button>
+                    </form>
+                    <p class="media__form__text m-c-grey">Мы не шлем спам, и передаем никому ваши данные.</p>
+                </div>
+            </section>
+        </article>
+        <!-- media end-->
     </main>
+    <!-- footer -->
+    <article id="Контакты"></article>
+    <footer class="footer m-h465 m-bc-grey">
+        <div class="wrapper">
+            <div class="footer__wrap m-fw">
+                <section class="footer__contacts  m-mr35 m-w250">
+                    <h3 class="footer__contacts__title m-c-black">Контактная информация</h3>
+                    <p class="footer__contacts__cont point m-c-grey m-mb30"><i class="fa fa-envelope-o color-g" aria-hidden="true"></i>test@test.ru</p>
+                    <p class="footer__contacts__cont point m-c-grey m-mb30"><i class="fa fa-phone" aria-hidden="true"></i>+8 777 555 66 99</p>
+                    <p class="footer__contacts__cont point m-c-grey m-mb30"><i class="fa fa-map-marker" aria-hidden="true"></i>Москва, Бульвар Ленина 33</p>
+                </section>
+                <section class="footer__links m-mr35 m-w250">
+                    <h3 class="footer__contacts__title m-c-black">Основные ссылки</h3>
+                    <ul>
+                        <li class="footer__links point m-c-grey m-mb30"><i class="fa fa-angle-right" aria-hidden="true"></i>Главная</li>
+                        <li class="footer__links point m-c-grey m-mb30"><i class="fa fa-angle-right" aria-hidden="true"></i>Наши проекты</li>
+                        <li class="footer__links point m-c-grey m-mb30"><i class="fa fa-angle-right" aria-hidden="true"></i>Наши услуги</li>
+                        <li class="footer__links point m-c-grey m-mb30"><i class="fa fa-angle-right" aria-hidden="true"></i>Контакты</li>
+                    </ul>
+                </section>
+                <section class="footer__projects m-mr35 m-w250">
+                    <h3 class="footer__contacts__title m-c-black">Наши проекты</h3>
+                    <ul>
+                        <li class="footer__projects point m-c-grey m-mb30"><i class="fa fa-angle-right" aria-hidden="true"></i>РосНано</li>
+                        <li class="footer__projects point m-c-grey m-mb30"><i class="fa fa-angle-right" aria-hidden="true"></i>Сколково</li>
+                        <li class="footer__projects point m-c-grey m-mb30"><i class="fa fa-angle-right" aria-hidden="true"></i>Проект “Восток”</li>
+                        <li class="footer__projects point m-c-grey m-mb30"><i class="fa fa-angle-right" aria-hidden="true"></i>ТЭЦ Калининграда</li>
+                    </ul>
+                </section>
+                <section class="footer__networks m-w250">
+                    <h3 class="footer__contacts__title m-c-black">Социальные сети</h3>
+                    <ul>
+                        <li class="footer__networks point m-c-grey m-mb30"><i class="fa fa-angle-right" aria-hidden="true"></i>VK.com</li>
+                        <li class="footer__networks point m-c-grey m-mb30"><i class="fa fa-angle-right" aria-hidden="true"></i>Instagram</li>
+                        <li class="footer__networks point m-c-grey m-mb30"><i class="fa fa-angle-right" aria-hidden="true"></i>Facebook</li>
+                        <li class="footer__networks point m-c-grey m-mb30"><i class="fa fa-angle-right" aria-hidden="true"></i>Twitter</li>
+                    </ul>
+                </section>
+                <div class="standarts__line m-mt70 m-mb30"></div>
+
+            </div>
+            <p class="footer__wrap__text m-c-grey m-mb30">(с) 2019. Все права защищены.</p>
+        </div>
+
+    </footer>
+    <!-- footer end-->
 </body>
 
 </html>

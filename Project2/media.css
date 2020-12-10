@@ -1,0 +1,351 @@
+/* Large desktops and laptops */
+
+@media (min-width: 1200px) {}
+
+
+/* Landscape tablets and medium desktops */
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .all-servises__card {
+        width: 320px;
+    }
+    .standarts__wrap {
+        margin-left: 20px;
+    }
+    .img__rectangle {
+        margin-top: 50px;
+        width: 370px;
+        height: 300px;
+    }
+    .standarts__content {
+        padding-right: 60px;
+    }
+    .works__section__title {
+        margin-left: 20px;
+    }
+    .works__section__button {
+        margin-right: 50px;
+    }
+    .img__card {
+        width: 300px;
+        height: 300px;
+    }
+    .img__card:not(:last-child) {
+        margin-right: 20px;
+    }
+    .works__section__img {
+        margin-left: 20px;
+    }
+    .content__card__title {
+        width: 300px;
+    }
+    .content__card__subtitle {
+        width: 300px;
+    }
+    .content__card:not(:last-child) {
+        margin-right: 20px;
+    }
+    .works__section__content {
+        margin-left: 20px;
+    }
+    .our-projects__img__card {
+        width: 230px;
+        height: 230px;
+    }
+    .our-projects__img__card:not(:last-child) {
+        margin-right: 5px;
+    }
+    .our-projects__img {
+        margin-left: 20px;
+        margin-bottom: 70px;
+    }
+    .footer__contacts {
+        width: 220px;
+    }
+    .point {
+        width: 200px;
+    }
+    .footer__contacts__title {
+        height: 15px;
+        font-size: 14px;
+        line-height: 20px;
+    }
+    .m-mr35 {
+        margin-right: 0;
+    }
+    .footer__wrap {
+        margin-left: 20px;
+    }
+}
+
+
+/* Portrait tablets and small desktops */
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .servises__button {
+        margin-top: 90px;
+    }
+    .servises__title {
+        font-size: 33px;
+    }
+    .standarts__wrap {
+        margin-left: 30px;
+    }
+    .standarts__img {
+        float: center;
+        margin-top: 50px;
+    }
+    .img__rectangle {
+        width: 500px;
+        height: 270px;
+        border-radius: 30px;
+    }
+    .works__section__header {
+        margin-left: 30px;
+    }
+    .works__section__title {
+        width: 500px;
+        font-size: 34px;
+    }
+    .works__section__button {
+        margin-right: 30px;
+    }
+    .img__card {
+        width: 230px;
+        height: 230px;
+    }
+    .img__card:not(:last-child) {
+        margin-right: 10px;
+    }
+    .works__section__img {
+        margin-left: 15px;
+    }
+    .content__card__title {
+        margin-top: 30px;
+        width: 230px;
+    }
+    .content__card__subtitle {
+        margin-bottom: 30px;
+        width: 230px;
+    }
+    .content__card:not(:last-child) {
+        margin-right: 10px;
+    }
+    .works__section__content {
+        margin-left: 15px;
+    }
+    .m-mb30 {
+        margin-bottom: 80px;
+    }
+    .our-projects__img__card {
+        width: 300px;
+        height: 200px;
+        margin-bottom: 20px;
+        margin-left: 30px;
+    }
+    .footer__contacts,
+    .footer__links,
+    .footer__projects,
+    .footer__networks {
+        width: 170px;
+    }
+    .point {
+        width: 170px;
+        line-height: 20px;
+        margin-bottom: 10px;
+    }
+    .footer__contacts__title {
+        height: 15px;
+        font-size: 14px;
+        line-height: 20px;
+    }
+    .m-mr35 {
+        margin-right: 5px;
+    }
+    .footer__wrap {
+        margin-left: 30px;
+    }
+    .m-h465 {
+        height: 400px;
+    }
+}
+
+
+/* Landscape phones and portrait tablets */
+
+@media (max-width: 767px) {
+    .menu__btn {
+        display: flex;
+        /* используем flex для центрирования содержимого */
+        align-items: center;
+        /* центрируем содержимое кнопки */
+        position: fixed;
+        top: 20px;
+        left: 20px;
+        width: 26px;
+        height: 26px;
+        cursor: pointer;
+        z-index: 1;
+    }
+    /* добавляем "гамбургер" */
+    .menu__btn>span,
+    .menu__btn>span::before,
+    .menu__btn>span::after {
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        background-color: #616161;
+    }
+    .menu__btn>span::before {
+        content: '';
+        top: -8px;
+    }
+    .menu__btn>span::after {
+        content: '';
+        top: 8px;
+    }
+    /* контейнер меню */
+    .menu__list {
+        display: block;
+        position: fixed;
+        visibility: hidden;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 50%;
+        margin: 0;
+        padding: 80px 0;
+        list-style: none;
+        text-align: center;
+        background-color: #4985FF;
+        box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
+    }
+    /* элементы меню */
+    .menu__link {
+        display: block;
+        width: 100%;
+        padding: 12px 24px;
+        color: rgb(255, 255, 255);
+        font-size: 30px;
+        font-weight: 600;
+        text-decoration: none;
+        text-align: left;
+    }
+    #menu__toggle:checked~.menu__btn>span {
+        transform: rotate(45deg);
+    }
+    #menu__toggle:checked~.menu__btn>span::before {
+        top: 0;
+        transform: rotate(0);
+    }
+    #menu__toggle:checked~.menu__btn>span::after {
+        top: 0;
+        transform: rotate(90deg);
+    }
+    #menu__toggle:checked~.menu__list {
+        visibility: visible;
+        left: 0;
+    }
+    .menu__btn>span,
+    .menu__btn>span::before,
+    .menu__btn>span::after {
+        transition-duration: .25s;
+    }
+    .menu__list {
+        transition-duration: .25s;
+    }
+    .menu__link {
+        transition-duration: .25s;
+    }
+}
+
+
+/* Portrait phones and smaller */
+
+@media (max-width: 480px) {
+    .menu__btn {
+        display: flex;
+        /* используем flex для центрирования содержимого */
+        align-items: center;
+        /* центрируем содержимое кнопки */
+        position: fixed;
+        top: 20px;
+        left: 20px;
+        width: 26px;
+        height: 26px;
+        cursor: pointer;
+        z-index: 1;
+    }
+    /* добавляем "гамбургер" */
+    .menu__btn>span,
+    .menu__btn>span::before,
+    .menu__btn>span::after {
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        background-color: #616161;
+    }
+    .menu__btn>span::before {
+        content: '';
+        top: -8px;
+    }
+    .menu__btn>span::after {
+        content: '';
+        top: 8px;
+    }
+    /* контейнер меню */
+    .menu__list {
+        display: block;
+        position: fixed;
+        visibility: hidden;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 40%;
+        margin: 0;
+        padding: 80px 0;
+        list-style: none;
+        text-align: center;
+        background-color: #4985FF;
+        box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
+    }
+    /* элементы меню */
+    .menu__link {
+        display: block;
+        width: 100%;
+        padding: 12px 24px;
+        color: rgb(255, 255, 255);
+        font-size: 30px;
+        font-weight: 600;
+        text-decoration: none;
+        text-align: left;
+    }
+    #menu__toggle:checked~.menu__btn>span {
+        transform: rotate(45deg);
+    }
+    #menu__toggle:checked~.menu__btn>span::before {
+        top: 0;
+        transform: rotate(0);
+    }
+    #menu__toggle:checked~.menu__btn>span::after {
+        top: 0;
+        transform: rotate(90deg);
+    }
+    #menu__toggle:checked~.menu__list {
+        visibility: visible;
+        left: 0;
+    }
+    .menu__btn>span,
+    .menu__btn>span::before,
+    .menu__btn>span::after {
+        transition-duration: .25s;
+    }
+    .menu__list {
+        transition-duration: .25s;
+    }
+    .menu__link {
+        transition-duration: .25s;
+    }
+}
