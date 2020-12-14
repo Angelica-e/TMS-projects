@@ -176,9 +176,7 @@
 @media (max-width: 767px) {
     .menu__btn {
         display: flex;
-        /* используем flex для центрирования содержимого */
         align-items: center;
-        /* центрируем содержимое кнопки */
         position: fixed;
         top: 20px;
         left: 20px;
@@ -187,7 +185,6 @@
         cursor: pointer;
         z-index: 1;
     }
-    /* добавляем "гамбургер" */
     .menu__btn>span,
     .menu__btn>span::before,
     .menu__btn>span::after {
@@ -205,7 +202,6 @@
         content: '';
         top: 8px;
     }
-    /* контейнер меню */
     .menu__list {
         display: block;
         position: fixed;
@@ -213,15 +209,14 @@
         top: 0;
         left: -100%;
         width: 100%;
-        height: 50%;
+        height: 100%;
         margin: 0;
         padding: 80px 0;
         list-style: none;
         text-align: center;
-        background-color: #4985FF;
+        background: url(./img/Rectangle.jpg) no-repeat center;
         box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
     }
-    /* элементы меню */
     .menu__link {
         display: block;
         width: 100%;
@@ -257,6 +252,137 @@
     }
     .menu__link {
         transition-duration: .25s;
+    }
+    .main__intro {
+        height: 100vh;
+    }
+    .m-h703 {
+        height: 100vh;
+    }
+    .standarts__content {
+        padding-right: 0;
+        margin-left: 20px;
+    }
+    .servises__title {
+        height: 80px;
+        font-size: 30px;
+        line-height: 40px;
+        padding-bottom: 70px;
+    }
+    .servises__subtitle {
+        width: 475px;
+        margin-bottom: 100px;
+    }
+    .servises__subtitle {
+        margin-bottom: 120px;
+    }
+    .servises__button {
+        margin-top: 300px;
+    }
+    .standarts__title {
+        width: 400px;
+        font-size: 30px;
+        line-height: 53px;
+    }
+    .standarts__subtitle {
+        width: 450px;
+    }
+    .standarts__img {
+        margin-top: 50px;
+    }
+    .img__rectangle {
+        width: 480px;
+        height: 200px;
+    }
+    .works__section__title {
+        width: 430px;
+        font-weight: bold;
+        font-size: 30px;
+        margin-left: 20px;
+    }
+    .works__section__button {
+        margin-right: 10px;
+    }
+    .img__card {
+        width: 130px;
+        height: 130px;
+    }
+    .img__card:not(:last-child) {
+        margin-right: 20px;
+    }
+    .works__section__img {
+        margin-left: 20px;
+        top: 300px;
+    }
+    .main__works {
+        height: 100vh;
+    }
+    .content__card__title {
+        margin-top: 50px;
+        height: 10px;
+    }
+    .content__card__subtitle {
+        width: 350px;
+        height: 90px;
+        font-size: 16px;
+        line-height: 20px;
+        margin-top: 30px;
+    }
+    .works__section__content {
+        margin-left: 20px;
+    }
+    .works__section {
+        height: 40vh;
+    }
+    .our-projects__img__card {
+        width: 200px;
+        height: 200px;
+    }
+    .m-h776 {
+        height: 850px;
+    }
+    .our-projects__img {
+        margin-left: 20px;
+    }
+    input {
+        width: 200px;
+    }
+    .media__form__button {
+        width: 150px;
+    }
+    .media__form__form {
+        margin-top: 50px;
+    }
+    .media__header__subtitle {
+        margin-top: 30px;
+    }
+    .footer {
+        height: 40vh;
+    }
+    .footer__contacts,
+    .footer__links,
+    .footer__projects,
+    .footer__networks,
+    .footer__contacts__title,
+    .point {
+        width: 220px;
+    }
+    .m-mr35 {
+        margin-right: 5px;
+    }
+    .m-mb30 {
+        margin-bottom: 5px;
+    }
+    .footer__wrap {
+        padding-top: 30px;
+    }
+    .footer__contacts,
+    .footer__projects {
+        margin-left: 20px;
+    }
+    .footer__projects,
+    .footer__networks {
+        margin-top: 20px;
     }
 }
 
@@ -266,9 +392,7 @@
 @media (max-width: 480px) {
     .menu__btn {
         display: flex;
-        /* используем flex для центрирования содержимого */
         align-items: center;
-        /* центрируем содержимое кнопки */
         position: fixed;
         top: 20px;
         left: 20px;
@@ -277,7 +401,6 @@
         cursor: pointer;
         z-index: 1;
     }
-    /* добавляем "гамбургер" */
     .menu__btn>span,
     .menu__btn>span::before,
     .menu__btn>span::after {
@@ -295,7 +418,6 @@
         content: '';
         top: 8px;
     }
-    /* контейнер меню */
     .menu__list {
         display: block;
         position: fixed;
@@ -303,22 +425,21 @@
         top: 0;
         left: -100%;
         width: 100%;
-        height: 40%;
+        height: 100vh;
         margin: 0;
-        padding: 80px 0;
+        padding: 40px 0;
         list-style: none;
         text-align: center;
-        background-color: #4985FF;
+        background: url(./img/Rectangle.jpg) no-repeat center;
         box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
     }
-    /* элементы меню */
     .menu__link {
         display: block;
         width: 100%;
         padding: 12px 24px;
         color: rgb(255, 255, 255);
-        font-size: 30px;
-        font-weight: 600;
+        font-size: 24px;
+        font-weight: 500;
         text-decoration: none;
         text-align: left;
     }
@@ -347,5 +468,276 @@
     }
     .menu__link {
         transition-duration: .25s;
+    }
+    .img__rectangle {
+        width: 300px;
+    }
+    .servises__subtitle {
+        width: 300px;
+    }
+    .standarts__title {
+        width: 280px;
+    }
+    .standarts__subtitle {
+        width: 300px;
+    }
+    .works__section__title {
+        width: 250px;
+    }
+    .main__intro {
+        height: 100vh;
+    }
+    .intro__title {
+        font-weight: 600;
+        font-size: 34px;
+        line-height: 34px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .intro__subtitle {
+        padding-top: 120px;
+    }
+    .servises__all-servises {
+        margin-bottom: 30px;
+    }
+    .servises__title {
+        height: 150px;
+        padding-top: 30px;
+        padding-bottom: 10px;
+        font-size: 22px;
+        line-height: 30px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .servises__subtitle {
+        height: 120px;
+        font-size: 14px;
+        line-height: 20px;
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-bottom: 30px;
+    }
+    .all-servises__ellipse {
+        width: 80px;
+        height: 80px;
+    }
+    .all-servises__ellipse2 {
+        width: 60px;
+        height: 60px;
+    }
+    .all-servises__group {
+        top: 30px;
+        left: 30px;
+        width: 20px;
+        height: 20px;
+    }
+    .all-servises__title {
+        left: 90px;
+        width: 210px;
+    }
+    .all-servises__subtitle {
+        width: 210px;
+        height: 65px;
+        left: 90px;
+    }
+    .servises__button {
+        margin-top: 0;
+    }
+    .m-h703 {
+        height: 850px;
+    }
+    .m-h797 {
+        height: 1000px;
+    }
+    .standarts__content {
+        margin-left: 10px;
+        margin-right: 10px;
+        padding-right: 0px;
+        height: 400px;
+    }
+    .standarts__title {
+        font-size: 22px;
+        line-height: 30px;
+        padding-top: 50px;
+        margin-bottom: 0px;
+    }
+    .standarts__subtitle {
+        height: 150px;
+        font-size: 14px;
+        line-height: 20px;
+    }
+    .standarts__img {
+        margin-top: 0px;
+        margin-bottom: 30px;
+    }
+    .standarts__wrap {
+        margin-bottom: 20px;
+    }
+    .standarts__all-standarts {
+        width: auto;
+        height: 300px;
+        justify-content: middle;
+        margin-top: 30px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .all-standarts__card {
+        padding-bottom: 30px;
+        margin-right: 20px;
+    }
+    .all-standarts__card:not(:first-child) {
+        margin-left: 0px;
+    }
+    .main__works {
+        height: 1100px;
+    }
+    .works__section {
+        height: 250px;
+    }
+    .works__section__header {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .works__section__title {
+        font-size: 22px;
+        line-height: 30px;
+        padding-top: 30px;
+        width: 60%;
+    }
+    .m-mt143 {
+        margin-top: 160px;
+    }
+    .works__section__img {
+        top: 230px;
+        margin-left: 10px;
+    }
+    .img__card {
+        width: 90px;
+        height: 90px;
+    }
+    .img__card:not(:last-child) {
+        margin-right: 10px;
+    }
+    .works__section__content {
+        margin-bottom: 85px;
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-top: 70px;
+        width: 310px;
+    }
+    .content__card:not(:last-child) {
+        margin-right: 0px;
+    }
+    .content__card__title {
+        margin-top: 30px;
+        height: 40px;
+        font-size: 20px;
+        line-height: 20px;
+        width: 300px;
+    }
+    .content__card__subtitle {
+        font-size: 14px;
+        line-height: 20px;
+        width: 300px;
+        height: 100px;
+    }
+    .our-projects__title {
+        font-size: 22px;
+        line-height: 30px;
+        padding-top: 30px;
+        margin-bottom: 20px;
+    }
+    .our-projects__subtitle {
+        height: 110px;
+        font-size: 14px;
+        line-height: 20px;
+        margin-bottom: 30px;
+    }
+    .our-projects__img__card {
+        width: 130px;
+        height: 130px;
+        margin-bottom: 10px;
+    }
+    .our-projects__img__card:not(:last-child) {
+        margin-right: 10px;
+    }
+    .our-projects__img {
+        margin-bottom: 30px;
+    }
+    .m-h776 {
+        height: 600px;
+    }
+    .media__header__title {
+        font-size: 22px;
+        line-height: 30px;
+        padding-top: 30px;
+    }
+    .media__header__subtitle {
+        font-size: 14px;
+        line-height: 20px;
+        margin-bottom: 30px;
+    }
+    .m-mt165 {
+        margin-top: 50px;
+    }
+    .media__form__title {
+        height: 20px;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 20px;
+    }
+    .media__form__subtitle {
+        height: 15px;
+        font-size: 14px;
+        line-height: 20px;
+    }
+    .m-h512 {
+        height: 450px;
+    }
+    input {
+        width: 140px;
+        height: 35px;
+    }
+    .media__form__button {
+        width: 140px;
+        height: 35px;
+    }
+    .m-h465 {
+        height: 550px;
+    }
+    .footer__wrap {
+        padding-top: 30px;
+    }
+    .footer__contacts,
+    .footer__links,
+    .footer__projects,
+    .footer__networks,
+    .point {
+        width: 140px;
+        height: 170px;
+    }
+    .footer__contacts__title {
+        width: 140px;
+        height: 40px;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 20px;
+        margin-bottom: 20px;
+    }
+    .m-mr35 {
+        margin-right: 5px;
+    }
+    .m-mb30 {
+        margin-bottom: 10px;
+    }
+    .point {
+        width: 140px;
+        height: 22px;
+        font-size: 12px;
+        line-height: 22px;
+        margin: 0;
+    }
+    li {
+        margin: 0;
     }
 }
