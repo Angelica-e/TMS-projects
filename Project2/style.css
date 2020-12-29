@@ -27,6 +27,17 @@
                 padding-top: 40px;
             }
             
+            .header-scroll {
+                background-color: #4985FF;
+                opacity: 0.7;
+                height: auto;
+                box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.3);
+            }
+            
+            .header-scroll a {
+                height: auto!important;
+            }
+            
             #menu__toggle {
                 opacity: 0;
             }
@@ -146,6 +157,10 @@
                 top: 61px;
                 font-size: 14px;
                 line-height: 22px;
+            }
+            
+            .servises__button {
+                margin-bottom: 105px;
             }
             /* servises end*/
             /* standarts*/
@@ -334,6 +349,10 @@
                 margin-bottom: 50px;
             }
             
+            .our-projects__button {
+                margin-bottom: 130px;
+            }
+            
             .our-projects__img__card:not(:last-child) {
                 margin-right: 30px;
             }
@@ -437,6 +456,7 @@
                 font-size: 13px;
                 line-height: 21px;
                 text-align: center;
+                margin-bottom: 85px;
             }
             /* media end*/
             /* footer */
@@ -468,10 +488,10 @@
             }
             
             .footer__wrap__text {
-                height: 15px;
                 font-size: 13px;
                 line-height: 21px;
                 text-align: center;
+                padding-bottom: 30px;
             }
             
             .point {

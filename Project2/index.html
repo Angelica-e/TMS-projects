@@ -36,6 +36,14 @@
                         <a href="#Контакты" class="menu__link m-border">Контакты</a>
                     </li>
                 </ul>
+                <script>
+                    function changeCss() {
+                        var navElement = document.querySelector(".header__menu");
+
+                        this.scrollY > 800 ? navElement.classList.add("header-scroll") : navElement.classList.remove("header-scroll");
+                    }
+                    window.addEventListener("scroll", changeCss);
+                </script>
             </nav>
         </div>
         <div class="header__line"></div>
@@ -55,7 +63,7 @@
         <!-- intro end-->
         <!-- servises -->
         <article class="main__servises m-w100">
-            <section class="servises__about-us m-h703 m-w100">
+            <section class="servises__about-us  m-w100">
                 <div class="wrapper">
                     <article id="Услуги"></article>
                     <h2 class="servises__title m-c-black">Мы создаем мобильные приложения<br> для крупных корпораций</h2>
@@ -88,7 +96,7 @@
             </section>
             <!-- servises end-->
             <!-- standarts-->
-            <section class="servises__standarts m-fw m-h797 m-bc-grey m-w100">
+            <section class="servises__standarts m-fw  m-bc-grey m-w100">
                 <div class="wrapper">
                     <div class="standarts__wrap m-fw">
                         <div class="standarts__content">
@@ -172,7 +180,7 @@
         <!-- works end-->
         <!-- our-projects -->
 
-        <article class="main__our-projects m-h776 m-bc-grey m-w100">
+        <article class="main__our-projects m-bc-grey m-w100">
             <div class="wrapper">
                 <h2 class="our-projects__title m-c-black">Наши проекты</h2>
                 <p class="our-projects__subtitle m-c-grey">Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem<br> Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. </p>
@@ -199,7 +207,7 @@
                 </div>
             </section>
             <article id="Новости"></article>
-            <section class="media__form m-w100 m-h512">
+            <section class="media__form m-w100 ">
                 <div class="wrapper">
                     <div class="standarts__line m-mt165 m-mb85"></div>
                     <h3 class="media__form__title m-c-black">Подпишитесь на нашу рассылку</h3>
@@ -216,16 +224,16 @@
     </main>
     <!-- footer -->
     <article id="Контакты"></article>
-    <footer class="footer m-h465 m-bc-grey">
+    <footer class="footer m-bc-grey">
         <div class="wrapper">
             <div class="footer__wrap m-fw">
-                <section class="footer__contacts  m-mr35 m-w250">
+                <section class="footer__contacts m-mb70 m-mr35 m-w250">
                     <h3 class="footer__contacts__title m-c-black">Контактная информация</h3>
                     <p class="footer__contacts__cont point m-c-grey m-mb30"><i class="fa fa-envelope-o color-g" aria-hidden="true"></i>test@test.ru</p>
                     <p class="footer__contacts__cont point m-c-grey m-mb30"><i class="fa fa-phone" aria-hidden="true"></i>+8 777 555 66 99</p>
                     <p class="footer__contacts__cont point m-c-grey m-mb30"><i class="fa fa-map-marker" aria-hidden="true"></i>Москва, Бульвар Ленина 33</p>
                 </section>
-                <section class="footer__links m-mr35 m-w250">
+                <section class="footer__links m-mb70 m-mr35 m-w250">
                     <h3 class="footer__contacts__title m-c-black">Основные ссылки</h3>
                     <ul>
                         <li class="footer__links point m-c-grey m-mb30"><i class="fa fa-angle-right" aria-hidden="true"></i>Главная</li>
@@ -234,7 +242,7 @@
                         <li class="footer__links point m-c-grey m-mb30"><i class="fa fa-angle-right" aria-hidden="true"></i>Контакты</li>
                     </ul>
                 </section>
-                <section class="footer__projects m-mr35 m-w250">
+                <section class="footer__projects m-mb70 m-mr35 m-w250">
                     <h3 class="footer__contacts__title m-c-black">Наши проекты</h3>
                     <ul>
                         <li class="footer__projects point m-c-grey m-mb30"><i class="fa fa-angle-right" aria-hidden="true"></i>РосНано</li>
@@ -243,7 +251,7 @@
                         <li class="footer__projects point m-c-grey m-mb30"><i class="fa fa-angle-right" aria-hidden="true"></i>ТЭЦ Калининграда</li>
                     </ul>
                 </section>
-                <section class="footer__networks m-w250">
+                <section class="footer__networks m-mb70 m-w250">
                     <h3 class="footer__contacts__title m-c-black">Социальные сети</h3>
                     <ul>
                         <li class="footer__networks point m-c-grey m-mb30"><i class="fa fa-angle-right" aria-hidden="true"></i>VK.com</li>
@@ -252,9 +260,9 @@
                         <li class="footer__networks point m-c-grey m-mb30"><i class="fa fa-angle-right" aria-hidden="true"></i>Twitter</li>
                     </ul>
                 </section>
-                <div class="standarts__line m-mt70 m-mb30"></div>
+                <div class="standarts__line m-mb30"></div>
             </div>
-            <p class="footer__wrap__text m-c-grey m-mb30">(с) 2019. Все права защищены.</p>
+            <div class="footer__wrap__text m-c-grey">(с) 2019. Все права защищены.</div>
         </div>
     </footer>
     <!-- footer end-->

@@ -40,28 +40,8 @@
     background-color: #3574f1;
 }
 
-.m-h703 {
-    height: 703px;
-}
-
-.m-h797 {
-    height: 797px;
-}
-
-.m-h776 {
-    height: 776px;
-}
-
 .m-h570 {
     height: 570px;
-}
-
-.m-h512 {
-    height: 512px;
-}
-
-.m-h465 {
-    height: 465px;
 }
 
 .m-bc-grey {
@@ -96,10 +76,6 @@
     margin-top: 165px;
 }
 
-.m-mt70 {
-    margin-top: 70px;
-}
-
 .m-mb85 {
     margin-bottom: 85px;
 }
@@ -118,4 +94,8 @@
 
 .m-w250 {
     width: 250px;
+}
+
+.m-mb70 {
+    margin-bottom: 70px;
 }

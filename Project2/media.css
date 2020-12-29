@@ -165,9 +165,6 @@
     .footer__wrap {
         margin-left: 30px;
     }
-    .m-h465 {
-        height: 400px;
-    }
 }
 
 
@@ -214,8 +211,7 @@
         padding: 80px 0;
         list-style: none;
         text-align: center;
-        background: url(./img/Rectangle.jpg) no-repeat center;
-        box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
+        background: url(./img/Rectangle.jpg) no-repeat;
     }
     .menu__link {
         display: block;
@@ -256,9 +252,6 @@
     .main__intro {
         height: 100vh;
     }
-    .m-h703 {
-        height: 100vh;
-    }
     .standarts__content {
         padding-right: 0;
         margin-left: 20px;
@@ -277,7 +270,8 @@
         margin-bottom: 120px;
     }
     .servises__button {
-        margin-top: 300px;
+        margin-top: 100px;
+        margin-bottom: 100px;
     }
     .standarts__title {
         width: 400px;
@@ -331,15 +325,9 @@
     .works__section__content {
         margin-left: 20px;
     }
-    .works__section {
-        height: 40vh;
-    }
     .our-projects__img__card {
         width: 200px;
         height: 200px;
-    }
-    .m-h776 {
-        height: 850px;
     }
     .our-projects__img {
         margin-left: 20px;
@@ -355,9 +343,6 @@
     }
     .media__header__subtitle {
         margin-top: 30px;
-    }
-    .footer {
-        height: 40vh;
     }
     .footer__contacts,
     .footer__links,
@@ -383,6 +368,12 @@
     .footer__projects,
     .footer__networks {
         margin-top: 20px;
+    }
+    .m-mb70 {
+        margin-bottom: 0;
+    }
+    .main__works {
+        height: 1300px;
     }
 }
 
@@ -484,9 +475,6 @@
     .works__section__title {
         width: 250px;
     }
-    .main__intro {
-        height: 100vh;
-    }
     .intro__title {
         font-weight: 600;
         font-size: 34px;
@@ -543,12 +531,6 @@
     .servises__button {
         margin-top: 0;
     }
-    .m-h703 {
-        height: 850px;
-    }
-    .m-h797 {
-        height: 1000px;
-    }
     .standarts__content {
         margin-left: 10px;
         margin-right: 10px;
@@ -575,7 +557,6 @@
     }
     .standarts__all-standarts {
         width: auto;
-        height: 300px;
         justify-content: middle;
         margin-top: 30px;
         margin-left: 10px;
@@ -587,12 +568,6 @@
     }
     .all-standarts__card:not(:first-child) {
         margin-left: 0px;
-    }
-    .main__works {
-        height: 1100px;
-    }
-    .works__section {
-        height: 250px;
     }
     .works__section__header {
         margin-left: 10px;
@@ -619,11 +594,14 @@
         margin-right: 10px;
     }
     .works__section__content {
-        margin-bottom: 85px;
+        padding-bottom: 85px;
         margin-left: 10px;
         margin-right: 10px;
         margin-top: 70px;
         width: 310px;
+    }
+    .main__works {
+        height: 1000px;
     }
     .content__card:not(:last-child) {
         margin-right: 0px;
@@ -664,9 +642,6 @@
     .our-projects__img {
         margin-bottom: 30px;
     }
-    .m-h776 {
-        height: 600px;
-    }
     .media__header__title {
         font-size: 22px;
         line-height: 30px;
@@ -691,9 +666,6 @@
         font-size: 14px;
         line-height: 20px;
     }
-    .m-h512 {
-        height: 450px;
-    }
     input {
         width: 140px;
         height: 35px;
@@ -701,9 +673,6 @@
     .media__form__button {
         width: 140px;
         height: 35px;
-    }
-    .m-h465 {
-        height: 550px;
     }
     .footer__wrap {
         padding-top: 30px;
