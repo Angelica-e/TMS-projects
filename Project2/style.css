@@ -500,4 +500,8 @@
                 font-size: 14px;
                 line-height: 22px;
             }
+            
+            .point:hover {
+                text-decoration: underline;
+            }
             /* footer end*/
