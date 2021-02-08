@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <table id='table'>
+        <tr>
+            <td class="head">Firstname</td>
+            <td class="head">Lastname</td>
+            <td class="head">Company</td>
+        </tr>
+        <tr>
+            <td>Firstname</td>
+            <td>Lastname</td>
+            <td>Company</td>
+        </tr>
+        <tr>
+            <td>Firstname</td>
+            <td>Lastname</td>
+            <td>Company</td>
+        </tr>
+        <tr>
+            <td>Firstname</td>
+            <td>Lastname</td>
+            <td>Company</td>
+        </tr>
+        <tr>
+            <td>Firstname</td>
+            <td>Lastname</td>
+            <td>Company</td>
+        </tr>
+    </table>
+    <style>
+        table {
+            width: 600px;
+            height: 400px;
+            border-collapse: collapse;
+            background-color: rgb(167, 250, 253);
+        }
+        
+        td {
+            padding: 10px;
+            border: 1px solid black;
+            text-align: center;
+            font-size: large;
+        }
+        
+        .head {
+            font-weight: bold;
+        }
+    </style>
+    <script>
+        table.onmouseover = function(event) {
+            let target = event.target;
+            target.style.background = 'pink';
+        };
+
+        table.onmouseout = function(event) {
+            let target = event.target;
+            target.style.background = '';
+        };
+    </script>
+
+</body>
+
+</html>

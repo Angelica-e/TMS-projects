@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+        const INPUT = {
+            type: 'input',
+            properties: {
+                type: 'text',
+                className: 'inputText'
+            }
+        };
+        const BUTTON = {
+            type: 'input',
+            properties: {
+                type: 'button',
+                value: 'Add Task',
+                onclick: addToDo
+            }
+        };
+        const LIST = {
+            type: 'ul',
+            properties: {
+                id: 'LIST',
+                className: 'list'
+            }
+        };
+        const BUTTON_DELETE = {
+            type: 'input',
+            properties: {
+                type: "button",
+                value: 'X',
+                onclick: deleteElem
+            }
+        };
+        const BUTTON_EDIT = {
+            type: 'input',
+            properties: {
+                type: "button",
+                value: 'edit',
+                onclick: editElem
+            }
+        };
+        const BUTTON_UP = {
+            type: 'input',
+            properties: {
+                type: "button",
+                value: 'UP',
+                onclick: upElem
+            }
+        };
+        const BUTTON_DOWN = {
+            type: 'input',
+            properties: {
+                type: "button",
+                value: 'DOWN',
+                onclick: downElem
+            }
+        };
+
+        function addToDo() {
+            let text = document.querySelector('.inputText').value;
+            console.log(text);
+            let LiElem = (createElem({
+                type: 'li'
+            }));
+            LiElem.append(createElem(BUTTON_DELETE));
+            LiElem.append(createElem(BUTTON_UP));
+            LiElem.append(createElem(BUTTON_DOWN));
+            LiElem.append(createElem(BUTTON_EDIT));
+            LiElem.append(createElem({
+                type: 'span',
+                properties: {
+                    innerHTML: text
+                }
+            }));
+            document.querySelector('.list').append(LiElem);
+        }
+
+        function init() {
+            document.body.append(createElem(INPUT), createElem(BUTTON), createElem(LIST));
+        }
+        init();
+
+        function createElem(config) {
+            let element = document.createElement(config.type);
+            Object.entries(config.properties || {}).forEach(([key, value]) => {
+                element[key] = value;
+                console.log(element[key]);
+            });
+            return element;
+        }
+
+        function deleteElem() {
+            let button = event.target;
+            console.log(button.parentElement);
+            button.parentElement.remove();
+        }
+
+        function editElem() {
+            let edit = event.target.parentElement.lastChild;
+            edit.innerText = document.querySelector('.inputText').value;
+        }
+
+        function upElem() {
+            let elementUL = document.getElementById("LIST");
+            let elementLI = elementUL.childNodes[2];
+            elementUL.insertBefore(elementLI, elementUL.firstChild);
+
+        }
+
+        function downElem() {
+            let elementUL = document.getElementById("LIST");
+            for (let i = 0; i < document.ul.childNodes.length; i++) {
+                let elementLI = elementUL.childNodes[i];
+                elementUL.insertBefore(elementLI, elementUL.lastChild);
+            }
+        }
+    </script>
+
+</body>
+
+</html>

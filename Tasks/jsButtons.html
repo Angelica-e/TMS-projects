@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div class="buttons">
+        <button class="but1" data-tooltip="Tool tip 1">Button 1</button>
+        <button class="but2" data-tooltip="Tool tip 2">Button 2</button>
+    </div>
+
+    <style>
+        .buttons {
+            display: flex;
+            flex-direction: row;
+        }
+        
+        .but1 {
+            width: 150px;
+            height: 50px;
+            margin-top: 120px;
+            margin-right: 30px;
+        }
+        
+        .but2 {
+            width: 150px;
+            height: 50px;
+            margin-top: 30px;
+        }
+        
+        .tooltip {
+            position: fixed;
+            padding: 10px 20px;
+            border: 1px solid #b3c9ce;
+            border-radius: 4px;
+            text-align: center;
+            color: rgb(255, 255, 255);
+            background: rgb(135, 17, 139);
+            box-shadow: 3px 3px 3px rgba(0, 0, 0, .3);
+        }
+    </style>
+
+    <script>
+        let tooltipElem;
+
+        document.onmouseover = function(event) {
+            let target = event.target;
+
+            // если у нас есть подсказка...
+            let tooltipHtml = target.dataset.tooltip;
+            if (!tooltipHtml) return;
+
+            // ...создадим элемент для подсказки
+
+            tooltipElem = document.createElement('div');
+            tooltipElem.className = 'tooltip';
+            tooltipElem.innerHTML = tooltipHtml;
+            document.body.append(tooltipElem);
+
+            // спозиционируем его сверху от аннотируемого элемента (top-center)
+            let coords = target.getBoundingClientRect();
+
+            let left = coords.left + (target.offsetWidth - tooltipElem.offsetWidth) / 2;
+            if (left < 0) left = 0; // не заезжать за левый край окна
+
+            let top = coords.top - tooltipElem.offsetHeight - 5;
+            if (top < 0) { // если подсказка не помещается сверху, то отображать её снизу
+                top = coords.top + target.offsetHeight + 5;
+            }
+
+            tooltipElem.style.left = left + 'px';
+            tooltipElem.style.top = top + 'px';
+        };
+
+        document.onmouseout = function(e) {
+
+            if (tooltipElem) {
+                tooltipElem.remove();
+                tooltipElem = null;
+            }
+
+        };
+    </script>
+
+
+
+
+
+</body>
+
+</html>

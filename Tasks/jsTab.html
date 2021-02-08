@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="site">
+        <div class="tabs">
+            <div class="tab1"><input type="button" class="but1" value="HTML" onclick="showText1()"></div>
+            <div class="tab2"><input type="button" class="but2" value="CSS" onclick="showText2()"></div>
+            <div class="tab3"><input type="button" class="but3" value="JS" onclick="showText3()"></div>
+        </div>
+        <div class="content">
+            <div id="contentHTML">
+                <p>
+                    Hypertext Markup Language (HTML) is the standard markup language for documents designed to be displayed in a web browser. It can be assisted by technologies such as Cascading Style Sheets (CSS) and scripting languages such as JavaScript.
+                </p>
+                <p>
+                    Web browsers receive HTML documents from a web server or from local storage and render the documents into multimedia web pages. HTML describes the structure of a web page semantically and originally included cues for the appearance of the document.
+                </p>
+            </div>
+            <div id="contentCSS">
+                <p>
+                    Cascading Style Sheets (CSS) is a style sheet language used for describing the presentation of a document written in a markup language such as HTML.[1] CSS is a cornerstone technology of the World Wide Web, alongside HTML and JavaScript.[2]
+                </p>
+                <p>
+                    SS is designed to enable the separation of presentation and content, including layout, colors, and fonts.[3] This separation can improve content accessibility, provide more flexibility and control in the specification of presentation characteristics,
+                    enable multiple web pages to share formatting by specifying the relevant CSS in a separate .css file which reduces complexity and repetition in the structural content as well as enabling the .css file to be cached to improve the page
+                    load speed between the pages that share the file and its formatting.
+                </p>
+            </div>
+            <div id="contentJS">
+                <p>
+                    JavaScript (/ˈdʒɑːvəˌskrɪpt/),[6] often abbreviated as JS, is a programming language that conforms to the ECMAScript specification.[7] JavaScript is high-level, often just-in-time compiled, and multi-paradigm. It has curly-bracket syntax, dynamic typing,
+                    prototype-based object-orientation, and first-class functions.
+                </p>
+                <p>
+                    As a multi-paradigm language, JavaScript supports event-driven, functional, and imperative programming styles. It has application programming interfaces (APIs) for working with text, dates, regular expressions, standard data structures, and the Document
+                    Object Model (DOM). However, ECMAScript itself does not include any input/output (I/O), such as networking, storage, or graphics facilities, as the host environment (usually a web browser) provides those APIs.
+                </p>
+            </div>
+        </div>
+    </div>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+        
+        .site {
+            background-color: rgb(243, 230, 186);
+            border: 6px solid rgb(13, 85, 90);
+            width: 1200px;
+            height: 600px;
+            display: flex;
+        }
+        
+        #contentHTML,
+        #contentCSS,
+        #contentJS {
+            display: none;
+            text-align: left;
+            padding-top: 100px;
+            padding-left: 30px;
+            width: 800px;
+        }
+        
+        .tabs {
+            display: flex;
+            flex-direction: column;
+            width: 200px;
+            background-color: rgb(13, 85, 90);
+        }
+        
+        .tab1,
+        .tab2,
+        .tab3 {
+            width: 200px;
+            height: 150px;
+            margin-top: 37px;
+        }
+        
+        .but1,
+        .but2,
+        .but3 {
+            background-color: rgb(13, 85, 90);
+            width: 200px;
+            height: 150px;
+            border: none;
+            color: white;
+            font-size: 50px;
+        }
+        
+        .but1:hover,
+        .but2:hover,
+        .but3:hover {
+            background-color: rgb(10, 75, 78);
+        }
+    </style>
+    <script>
+        let text1 = document.getElementById("contentHTML");
+        let text2 = document.getElementById("contentCSS");
+        let text3 = document.getElementById("contentJS");
+
+        function showText1() {
+            text1.style.display = "block";
+            text2.style.display = "none";
+            text3.style.display = "none";
+        }
+
+        function showText2() {
+            text1.style.display = "none";
+            text2.style.display = "block";
+            text3.style.display = "none";
+        }
+
+        function showText3() {
+            text1.style.display = "none";
+            text2.style.display = "none";
+            text3.style.display = "block";
+        }
+    </script>
+</body>
+
+</html>

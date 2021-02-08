@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div id="text">
+        <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Soluta voluptatem<br> adipisci perferendis animi quisquam necessitatibus ea? Exercitationem unde<br> rerum numquam earum possimus expedita quaerat dicta beatae ducimus, sed placeat
+            dolor.
+        </p>
+    </div>
+    <style>
+        p {
+            -webkit-user-select: none;
+            /* user-select -- это нестандартное свойство */
+            -moz-user-select: none;
+            /* поэтому нужны префиксы */
+            -ms-user-select: none;
+        }
+    </style>
+    <script>
+        document.oncontextmenu = cmenu;
+
+        function cmenu() {
+            return false;
+        }
+    </script>
+
+</body>
+
+</html>

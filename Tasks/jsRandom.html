@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="wind">
+        <p>Random number</p>
+        <div class="result"></div>
+        <input type="button" class="" value="Generate random number" onclick="randomNumber()">
+    </div>
+    <style>
+        .result {
+            width: 50px;
+            height: 30px;
+            border: solid black;
+            margin-bottom: 20px;
+        }
+    </style>
+    <script>
+        function randomNumber() {
+            document.querySelector('.result').textContent = Math.floor(Math.random() * Math.floor(100));
+        }
+    </script>
+</body>
+
+</html>

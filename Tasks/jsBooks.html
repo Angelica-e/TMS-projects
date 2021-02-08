@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <!-- задание 3 СПИСОК КНИГ-->
+    <h3>Список книг</h3>
+
+    <ol id="BookList">
+        <li onclick="bookList(event, 1)" id="list1">JavaScript: The Good Parts («JavaScript. Сильные стороны»)</li>
+        <li onclick="bookList(event, 2)" id="list2">You Don’t Know JS («Вы не знаете JS»)</li>
+        <li onclick="bookList(event, 3)" id="list3">Eloquent JavaScript: A Modern Introduction to Programming («Выразительный Javascript»)</li>
+        <li onclick="bookList(event, 4)" id="list4">Effective JavaScript: 68 Specific Ways to Harness the Power of JavaScript («Сила JavaScript. 68 способов эффективного использования JS»)</li>
+        <li onclick="bookList(event, 5)" id="list5">JavaScript: The Definitive Guide («JavaScript. Подробное руководство»)</li>
+    </ol>
+
+    <script>
+        function bookList(event, n) {
+            let list = document.getElementById("BookList");
+            let book = document.getElementById("list" + n);
+            let li = list.getElementsByTagName("li");
+            for (i of li) {
+                i.style.backgroundColor = "white";
+            }
+            book.style.backgroundColor = "orange";
+        }
+    </script>
+
+
+</body>
+
+</html>

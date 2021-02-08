@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="news">
+        <div id="news1">
+            <div class="header1">
+                <h2>NEWS 1</h2> <input type="button" value="X [remove]" onclick="removeNews1()">
+            </div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, quis consectetur rerum officiis sed pariatur minima quasi quisquam earum perspiciatis, distinctio possimus dolorem inventore. Repudiandae, ut autem? Eum, reiciendis consequatur.
+            </p>
+        </div>
+        <div id="news2">
+            <div class="header2">
+                <h2>NEWS 2</h2> <input type="button" value="X [remove]" onclick="removeNews2()">
+            </div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, quis consectetur rerum officiis sed pariatur minima quasi quisquam earum perspiciatis, distinctio possimus dolorem inventore. Repudiandae, ut autem? Eum, reiciendis consequatur.
+            </p>
+        </div>
+        <div id="news3">
+            <div class="header3">
+                <h2>NEWS 3</h2> <input type="button" value="X [remove]" onclick="removeNews3()">
+            </div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, quis consectetur rerum officiis sed pariatur minima quasi quisquam earum perspiciatis, distinctio possimus dolorem inventore. Repudiandae, ut autem? Eum, reiciendis consequatur.
+            </p>
+        </div>
+    </div>
+    <style>
+        .header1,
+        .header2,
+        .header3 {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+        
+        #news1,
+        #news2,
+        #news3 {
+            background-color: rgb(240, 230, 184);
+            margin: 0;
+            padding: 20px;
+        }
+        
+        #news1,
+        #news2 {
+            border-bottom: 1px solid #000;
+        }
+    </style>
+    <script>
+        function removeNews1() {
+            let elem1 = document.getElementById("news1");
+            elem1.remove(elem1);
+        }
+
+        function removeNews2() {
+            let elem2 = document.getElementById("news2");
+            elem2.remove(elem2);
+        }
+
+        function removeNews3() {
+            let elem3 = document.getElementById("news3");
+            elem3.remove(elem3);
+        }
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <input type="button" value="Hide / Show text" onclick="hideShowText()">
+    <div id="text">
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.<br> Ea reprehenderit aperiam mollitia itaque atque nemo sequi,
+            <br> consequuntur corporis in et est id quas nihil facilis quos error neque, adipisci quae.
+        </p>
+    </div>
+
+    <script>
+        function hideShowText() {
+            let text = document.getElementById("text");
+
+            if (text.style.display == "block") {
+                text.style.display = "none";
+            } else {
+                text.style.display = "block";
+            }
+        }
+    </script>
+
+</body>
+
+</html>
