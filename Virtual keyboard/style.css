@@ -1,0 +1,71 @@
+.enabled {
+    background-color: rgb(47, 83, 74);
+    width: 150px;
+    height: 25px;
+    padding: 25px;
+    margin: 3px;
+}
+
+.button {
+    width: 25px;
+    height: 25px;
+    padding: 25px;
+    margin: 3px;
+}
+
+input {
+    background-color: rgb(68, 122, 109);
+    color: white;
+}
+
+input:active {
+    background-color: rgb(47, 83, 74);
+}
+
+body {
+    width: 877px;
+    align-content: center;
+}
+
+#key-input {
+    width: 870px;
+    height: 200px;
+    font-size: 20px;
+    word-wrap: break-word;
+}
+
+.backSpace {
+    width: 150px;
+    height: 25px;
+    padding: 25px;
+    margin: 3px;
+}
+
+.caps-lock {
+    width: 150px;
+    height: 25px;
+    padding: 25px;
+    margin: 3px;
+}
+
+.enter {
+    width: 209px;
+    height: 25px;
+    padding: 25px;
+    margin: 3px;
+}
+
+.language,
+.shift {
+    width: 131px;
+    height: 25px;
+    padding: 25px;
+    margin: 3px;
+}
+
+.space {
+    width: 270px;
+    height: 25px;
+    padding: 25px;
+    margin-left: 303px;
+}
