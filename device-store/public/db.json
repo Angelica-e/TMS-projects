@@ -1,0 +1,53 @@
+{
+    "devices": [{
+            "id": 0,
+            "imageUrl": "https://cdn.shortpixel.ai/client/q_glossy,ret_img,w_940,h_1112/https://my-store.by/wp-content/uploads/2021/05/iphone-12-purple-select-2021.png",
+            "name": "Apple iPhone 12",
+            "colors": [0, 1, 2],
+            "memoryCapacity": [0, 1, 2],
+            "price": 829,
+            "category": 0,
+            "rating": 5
+        },
+        {
+            "id": 1,
+            "imageUrl": "https://my-store.by/wp-content/uploads/2020/03/11-pink-large.png",
+            "name": "Apple iPhone 11",
+            "colors": [0, 1, 2],
+            "memoryCapacity": [0, 1, 2],
+            "price": 599,
+            "category": 0,
+            "rating": 4
+        },
+        {
+            "id": 2,
+            "imageUrl": "https://my-store.by/wp-content/uploads/2020/03/sp2019air.png",
+            "name": "MacBook Air",
+            "colors": [],
+            "memoryCapacity": [2, 3],
+            "price": 1200,
+            "category": 1,
+            "rating": 4
+        },
+        {
+            "id": 3,
+            "imageUrl": "https://my-store.by/wp-content/uploads/2020/02/airpods1.jpg",
+            "name": "AirPods Pro",
+            "colors": [],
+            "memoryCapacity": [],
+            "price": 250,
+            "category": 2,
+            "rating": 3
+        },
+        {
+            "id": 4,
+            "imageUrl": "https://cdn.shortpixel.ai/client/q_glossy,ret_img,w_768,h_1024/https://my-store.by/wp-content/uploads/2020/03/mouse1.png",
+            "name": "Apple Magic Mouse 2",
+            "colors": [],
+            "memoryCapacity": [],
+            "price": 50,
+            "category": 3,
+            "rating": 2
+        }
+    ]
+}

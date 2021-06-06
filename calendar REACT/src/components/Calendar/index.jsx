@@ -5,6 +5,7 @@ import classnames from 'classnames';
 import * as calendar from './calendar';
 
 import './index.css';
+import Clock from './clock';
 
 export default class Calendar extends React.Component {
     static defaultProps = {
@@ -73,7 +74,9 @@ export default class Calendar extends React.Component {
 
         return (
             <div className="calendar">
+                <Clock />
                 <header>
+                    
                     <button onClick={this.handlePrevMonthButtonClick}>{'<'}</button>
 
                     <select 
