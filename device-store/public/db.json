@@ -1,7 +1,7 @@
 {
     "devices": [{
             "id": 0,
-            "imageUrl": "https://cdn.shortpixel.ai/client/q_glossy,ret_img,w_940,h_1112/https://my-store.by/wp-content/uploads/2021/05/iphone-12-purple-select-2021.png",
+            "imageUrl": "https://my-store.by/wp-content/uploads/2020/10/12b.png",
             "name": "Apple iPhone 12",
             "colors": [0, 1, 2],
             "memoryCapacity": [0, 1, 2],
@@ -9,18 +9,30 @@
             "category": 0,
             "rating": 5
         },
+
         {
             "id": 1,
+            "imageUrl": "https://my-store.by/wp-content/uploads/2020/10/12pro_a.png",
+            "name": "iPhone 12 Pro Max",
+            "colors": [0, 1],
+            "memoryCapacity": [0, 1, 2],
+            "price": 1150,
+            "category": 0,
+            "rating": 6
+        },
+
+        {
+            "id": 2,
             "imageUrl": "https://my-store.by/wp-content/uploads/2020/03/11-pink-large.png",
             "name": "Apple iPhone 11",
-            "colors": [0, 1, 2],
+            "colors": [1, 2],
             "memoryCapacity": [0, 1, 2],
             "price": 599,
             "category": 0,
             "rating": 4
         },
         {
-            "id": 2,
+            "id": 3,
             "imageUrl": "https://my-store.by/wp-content/uploads/2020/03/sp2019air.png",
             "name": "MacBook Air",
             "colors": [],
@@ -30,7 +42,7 @@
             "rating": 4
         },
         {
-            "id": 3,
+            "id": 4,
             "imageUrl": "https://my-store.by/wp-content/uploads/2020/02/airpods1.jpg",
             "name": "AirPods Pro",
             "colors": [],
@@ -39,13 +51,36 @@
             "category": 2,
             "rating": 3
         },
+
         {
-            "id": 4,
+            "id": 5,
+            "imageUrl": "https://cdn.shortpixel.ai/client/q_glossy,ret_img,w_1280,h_932/https://my-store.by/wp-content/uploads/2021/05/hero_silver__cs265obeuxiu_large_2x-1280x932.jpg",
+            "name": "AirPods Max",
+            "colors": [],
+            "memoryCapacity": [],
+            "price": 650,
+            "category": 2,
+            "rating": 3
+        },
+
+        {
+            "id": 6,
             "imageUrl": "https://cdn.shortpixel.ai/client/q_glossy,ret_img,w_768,h_1024/https://my-store.by/wp-content/uploads/2020/03/mouse1.png",
             "name": "Apple Magic Mouse 2",
             "colors": [],
             "memoryCapacity": [],
             "price": 50,
+            "category": 3,
+            "rating": 2
+        },
+
+        {
+            "id": 7,
+            "imageUrl": "https://cdn.shortpixel.ai/client/q_glossy,ret_img,w_1000/https://my-store.by/wp-content/uploads/2021/05/d34ebd6a-c2e4-11e8-81ea-0cc47a460710_1.jpg",
+            "name": "Защитное стекло iPhone",
+            "colors": [],
+            "memoryCapacity": [],
+            "price": 5,
             "category": 3,
             "rating": 2
         }

@@ -1,12 +1,10 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-
 const SortPopup = React.memo(function SortPopup({ items, activeSortType, onClickSortType }) {
   const [visiblePopup, setVisiblePopup] = React.useState(false);
   const sortRef = React.useRef();
   const activeLabel = items.find(obj => obj.type === activeSortType).name;
-
 
   const toggleVisiblePopup = () => {
     setVisiblePopup(!visiblePopup);
@@ -20,11 +18,11 @@ const SortPopup = React.memo(function SortPopup({ items, activeSortType, onClick
   };
 
   const onSelectItem = (index) => {
- if(onClickSortType) {
-  onClickSortType(index);
- }
+    if (onClickSortType) {
+      onClickSortType(index);
+    }
     setVisiblePopup(false);
-};
+  };
 
   React.useEffect(() => {
     document.body.addEventListener('click', handleOutsideClick);
@@ -34,8 +32,8 @@ const SortPopup = React.memo(function SortPopup({ items, activeSortType, onClick
   return (
     <div ref={sortRef} className="sort">
       <div className="sort__label">
-        <svg 
-        className={visiblePopup ? 'rotated' : ''}
+        <svg
+          className={visiblePopup ? 'rotated' : ''}
           width="10"
           height="6"
           viewBox="0 0 10 6"
@@ -51,22 +49,23 @@ const SortPopup = React.memo(function SortPopup({ items, activeSortType, onClick
         <span onClick={toggleVisiblePopup}>{activeLabel}</span>
       </div>
       {visiblePopup && (
-      <div className="sort__popup">
-        <ul>
-          {items &&
-          items.map((obj, index) => (
-        <li 
-        onClick={() => onSelectItem(obj)}
-        className={activeSortType === obj.type ? 'active' : ''}
-        key={`${obj.type}_${index}`}>
-        {obj.name}
-       </li>
-    ))}
-        </ul>
-      </div>
-  )}
-  </div>
-  )}
+        <div className="sort__popup">
+          <ul>
+            {items &&
+              items.map((obj, index) => (
+                <li
+                  onClick={() => onSelectItem(obj)}
+                  className={activeSortType === obj.type ? 'active' : ''}
+                  key={`${obj.type}_${index}`}>
+                  {obj.name}
+                </li>
+              ))}
+          </ul>
+        </div>
+      )}
+    </div>
+  )
+}
 );
 
 SortPopup.propTypes = {
@@ -78,6 +77,5 @@ SortPopup.propTypes = {
 SortPopup.defaultProps = {
   items: [],
 }
-
 
 export default SortPopup;

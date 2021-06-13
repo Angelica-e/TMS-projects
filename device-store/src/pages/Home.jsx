@@ -16,6 +16,7 @@ const sortItems = [
 function Home() {
   const dispatch = useDispatch();
   const items = useSelector(({ devices }) => devices.items);
+  const cartItems = useSelector(({ cart }) => cart.items);
   const isLoaded = useSelector(({ devices }) => devices.isLoaded);
   const { category, sortBy } = useSelector(({ filters }) => filters);
 
@@ -34,6 +35,12 @@ function Home() {
     dispatch(setSortBy(type));
   }, []);
 
+  const handleAddDeviceToCart = obj => {
+    dispatch({
+      type: 'ADD_DEVICE_CART',
+      payload: obj
+    });
+  };
 
   return (
     <div className="container">
@@ -48,13 +55,18 @@ function Home() {
       <h2 className="content__title">Все товары</h2>
       <div className="content__items">
         {isLoaded
-          ? items.map((obj) => <DeviceBlock onClickAddDevice={(obj) => console.log(obj)} key={obj.id} isLoading={true} {...obj} />)
+          ? items.map((obj) => (
+            <DeviceBlock
+              onClickAddDevice={handleAddDeviceToCart}
+              key={obj.id}
+              addedCount={cartItems[obj.id] && cartItems[obj.id].items.lenght}
+              {...obj} />))
           : Array(8)
-          .fill(0)
-          .map((_, index) => <DeviceLoadingBlock key={index} />)}
+            .fill(0)
+            .map((_, index) => <DeviceLoadingBlock key={index} />)}
       </div>
     </div>
   )
 }
 
-export default Home
+export default Home;

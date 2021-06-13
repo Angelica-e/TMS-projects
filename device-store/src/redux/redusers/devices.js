@@ -18,8 +18,8 @@ const devices = (state = initialState, action) => {
                 ...state,
                 isLoaded: action.payload,
             };
-            default:
-                return state;
+        default:
+            return state;
     };
 }
 
