@@ -2,7 +2,7 @@ import React from 'react';
 import { CartItem } from '../components';
 import { useSelector, useDispatch } from 'react-redux';
 import { clearCart, removeCartItem, plusCartItem, minusCartItem } from '../redux/actions/cart';
-import cartEmpty from '../assets/img/empty-cart.png';
+import CartEmpty from './CartEmpty';
 import { Link } from 'react-router-dom';
 
 function Cart() {
@@ -72,7 +72,6 @@ function Cart() {
                     onPlus={onPlusItem}
                   />
                 ))}
-
             </div>
             <div className="cart__bottom">
               <div className="cart__bottom-details">
@@ -91,21 +90,10 @@ function Cart() {
                 </div>
               </div>
             </div>
-          </div> : <div className="cart cart--empty">
-            <h2>Корзина пустая <i>😕</i></h2>
-            <p>
-              Вероятней всего, вы ещё не заказывали товары.<br />
-              Для того, чтобы заказать товары, перейди на главную страницу.
-            </p>
-            <img src={cartEmpty} alt="Empty cart" />
-            <a href="/" className="button button--black">
-              <span>Вернуться назад</span>
-            </a>
-          </div>
+          </div> : <CartEmpty />
         }
       </div>
     </div>
   )
 }
-
 export default Cart;
